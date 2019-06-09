@@ -1,0 +1,20 @@
+{
+  "manifest_version":2,
+  "name": "sPoNgEbOb TyPeR",
+  "version": "1",
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {  "16": "sponge16.png",
+              "48": "sponge48.png",
+              "128": "sponge128.png" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.reddit.com/*", 
+        "https://www.google.com/*"
+      ],
+      "js": ["jquery-3.3.1.min.js", "content.js"]
+    }
+  ]
+}
